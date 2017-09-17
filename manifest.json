@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "阿亮的无聊插件",
+    "description": "",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://v.youku.com/*",
+                "http://v.youku.com/*"
+            ],
+            "js": [
+                "popup.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
