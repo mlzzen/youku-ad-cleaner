@@ -1,21 +1,18 @@
 {
     "manifest_version": 2,
 
-    "name": "阿亮的无聊插件",
+    "name": "优酷广告清除器",
     "description": "",
     "version": "1.0",
-    "browser_action": {
-        "default_icon": "icon.png"
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
     },
     "content_scripts": [
         {
-            "matches": [
-                "https://v.youku.com/*",
-                "http://v.youku.com/*"
-            ],
-            "js": [
-                "popup.js"
-            ],
+            "matches": ["https://v.youku.com/*", "http://v.youku.com/*"],
+            "js": ["popup.js"],
             "run_at": "document_end"
         }
     ]
